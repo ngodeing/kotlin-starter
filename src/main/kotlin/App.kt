@@ -1,3 +1,5 @@
+//CONTROL FLOW
+
 //fun main() {
 //    val name = "Alfian"
 //
@@ -163,13 +165,108 @@
 
 
 
-fun main() {
-    loop@ for (i in 1..10) {
-        println("Outside Loop")
+//fun main() {
+//    loop@ for (i in 1..10) {
+//        println("Outside Loop")
+//
+//        for (j in 1..10) {
+//            println("Inside Loop")
+//            if (j > 5) break@loop
+//        }
+//    }
+//}
 
-        for (j in 1..10) {
-            println("Inside Loop")
-            if (j > 5) break@loop
-        }
-    }
-}
+
+
+
+
+
+// DATA CLASS
+
+//data class Person(val name: String, val age: Int)
+//fun main(args: Array<String>) {
+//    val people = listOf(
+//        Person("John Doe", 30),
+//        Person("Jane Doe", 25)
+//    )
+//
+//    // Akses data class menggunakan indeks
+//    println(people[0].name) // John Doe
+//    println(people[1].age) // 25
+//}
+
+
+
+//fun main() {
+//    val list = (1..1000000).toList()
+//    list.filter { it % 5 == 0 }.map { it * 2 }.forEach { println(it) }
+//}
+
+
+
+//data class Person(val name: String, val age: Int)
+//
+//fun main(args: Array<String>) {
+//    // Setoff
+//    val people = mutableSetOf(
+//        Person("John Doe", 30),
+//        Person("Jane Doe", 25),
+//        Person("John Doe", 30) // Duplikasi data
+//    )
+//
+//    println(people.elementAt(0).age)// [Person(name=John Doe, age=30), Person(name=Jane Doe, age=25)]
+//
+//    // Map
+//    val peopleMap = mutableMapOf(
+//        "John Doe" to Person("John Doe", 30),
+//        "Jane Doe" to Person("Jane Doe", 25)
+//    )
+//
+//    println(peopleMap.getOrElse("John Doe") { Person("Unknown", -1) }.age) // {John Doe=Person(name=John Doe, age=30), Jane Doe=Person(name=Jane Doe, age=25)}
+//}
+
+
+
+//FUNCTIONAL PROGRAMMING
+
+//fun main() {
+//    val fullName = getFullName(first = "Kotlin" , middle = " is ", last = "Awesome")
+//    print(fullName)
+//}
+//
+//fun getFullName(first: String, middle: String, last: String): String {
+//    return "$first $middle $last"
+//}
+
+
+
+//fun main() {
+//    val number = sumNumbers(10, 20, 30, 40)
+//    print(number)
+//}
+//
+//fun sumNumbers(vararg number: Int): Int {
+//    return number.sum()
+//}
+
+
+
+//fun main() {
+//    val number = getNumberSize(10, 20, 30, 40, 50)
+//    print(number)
+//}
+//
+//fun getNumberSize(vararg number: Int): Int {
+//    return number.size
+//}
+
+
+
+//fun main() {
+//    val number = arrayOf(10, 20, 30, 40)
+//    sets(number)
+//}
+//
+//fun sets(number: Array<Int>) {
+//
+//}
